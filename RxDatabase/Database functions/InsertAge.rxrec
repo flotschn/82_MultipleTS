@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="RxDatabase.Database_functions">
 	</codegen>
 	<variables>
+		<var
+		id="8cfa192a-0d0e-41a2-8ef8-ced430c42710"
+		name="Age">
+			48
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -2123,6 +2128,10 @@ FFAH/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Age">
+				</binding>
 			</bindings>
 			<info
 			id="25d04ce8-a039-4f0d-b3fc-9b4c5d26dbbf"
@@ -3211,7 +3220,7 @@ gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 	id="67ac6bf3-7ba6-4cc2-b500-02cee73dac25"
 	name="RxDatabaseRepository"
 	relativepath="..\RxDatabaseRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.2">
 		<codegen
 		classname="RxDatabaseRepository"
 		namespace="RxDatabase">

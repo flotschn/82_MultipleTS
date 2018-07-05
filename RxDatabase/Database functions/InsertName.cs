@@ -41,6 +41,7 @@ namespace RxDatabase.Database_functions
         /// </summary>
         public InsertName()
         {
+            Name = "John";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace RxDatabase.Database_functions
         }
 
 #region Variables
+
+        string _Name;
+
+        /// <summary>
+        /// Gets or sets the value of variable Name.
+        /// </summary>
+        [TestVariable("61289c9e-050f-4717-bdfc-2fc52b948381")]
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
 
 #endregion
 
@@ -82,8 +95,8 @@ namespace RxDatabase.Database_functions
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.FirstName' at 61;9.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(0));
             repo.DemoApplication.DatabaseTab.FirstName.Click("61;9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'DemoApplication.DatabaseTab.FirstName'.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(1));
-            repo.DemoApplication.DatabaseTab.FirstName.PressKeys("John");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Name' with focus on 'DemoApplication.DatabaseTab.FirstName'.", repo.DemoApplication.DatabaseTab.FirstNameInfo, new RecordItemIndex(1));
+            repo.DemoApplication.DatabaseTab.FirstName.PressKeys(Name);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.DatabaseTab.LastName' at 20;2.", repo.DemoApplication.DatabaseTab.LastNameInfo, new RecordItemIndex(2));
             repo.DemoApplication.DatabaseTab.LastName.Click("20;2");

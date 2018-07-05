@@ -53,6 +53,16 @@ namespace RxDatabase.Database_functions
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable Department.
+        /// </summary>
+        [TestVariable("4df2c91b-1ba3-457a-8208-563447a0d3bc")]
+        public string Department
+        {
+            get { return repo.Department; }
+            set { repo.Department = value; }
+        }
+
 #endregion
 
         /// <summary>

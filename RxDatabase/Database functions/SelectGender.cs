@@ -53,6 +53,16 @@ namespace RxDatabase.Database_functions
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable Gender.
+        /// </summary>
+        [TestVariable("14db4c9b-793e-4f23-a599-450366ae0e82")]
+        public string Gender
+        {
+            get { return repo.Gender; }
+            set { repo.Gender = value; }
+        }
+
 #endregion
 
         /// <summary>

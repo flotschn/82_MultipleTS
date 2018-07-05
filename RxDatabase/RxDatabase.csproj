@@ -222,6 +222,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>ba67ac7c-a244-409c-81a5-dfefbf06d889</id>
     </Compile>
+    <Compile Include="Uploading.cs">
+      <BoundTo>72d3d2fd-0943-47cd-bbe7-a394ece6738a</BoundTo>
+      <DependentUpon>Uploading.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6bed36e2-09cd-4221-a513-bc9543691df9</id>
+    </Compile>
+    <Compile Include="Uploading.UserCode.cs">
+      <BoundTo>72d3d2fd-0943-47cd-bbe7-a394ece6738a</BoundTo>
+      <DependentUpon>Uploading.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>87e63373-af71-4190-a9d5-589218d36a39</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -277,6 +289,18 @@
       <id>d8b2296f-0b86-4556-b970-92464483c6d9</id>
       <repoid>67ac6bf3-7ba6-4cc2-b500-02cee73dac25</repoid>
       <reporootid>433e9601-1d78-4cca-8b70-baf669adfae5</reporootid>
+    </None>
+    <Content Include="TestData.xlsx">
+      <Link>TestData.xlsx</Link>
+      <BoundTo>d80fe143-28cb-4bc2-91cf-c4261583b221</BoundTo>
+      <DependentUpon>RxDatabase.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>2ff94987-0202-4857-a559-99714a45ff9d</id>
+    </Content>
+    <None Include="Uploading.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>72d3d2fd-0943-47cd-bbe7-a394ece6738a</id>
+      <recordtableid>069d7755-38d6-4de5-aad1-318d0469c014</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

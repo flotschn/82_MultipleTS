@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="67ac6bf3-7ba6-4cc2-b500-02cee73dac25"
 name="RxDatabaseRepository"
 rxversion="8.2">
@@ -88,9 +87,8 @@ rxversion="8.2">
 				id="d0f03f67-3675-44cd-8006-ffd22a31d11f"
 				name="SelectMale"
 				refimgid="15214851-84d9-476d-a338-270e9d25b8ff"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/radiobutton[@controlname='rdbMale']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/radiobutton[@controlname='rdbMale']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/radiobutton[@controlname=$Gender]
 				</item>
 				<item
 				addcaps="button,accessible"
@@ -126,6 +124,69 @@ rxversion="8.2">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
 				</basepath>
 			</folder>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="f05255d4-bf18-4ffc-8ce9-4b9d80ea284f"
+			name="UIElementTestArea"
+			refimgid="8704745e-19a3-46b2-ade2-5b37cce2a17a"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='UI-element test area']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='UI-element test area']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="cafc4c2f-94a6-412b-a577-e89f9226754b"
+			isrooted="True"
+			name="RxTabUIElements"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabUIElements']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="tree,accessible"
+				capname="tree"
+				id="08395e38-f052-40e2-8334-7775cf639859"
+				name="TreeView"
+				refimgid="096b140b-c0fe-4bcc-9da9-8754c481974c"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree[@accessiblename='Tree view']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/tree[@accessiblename='Tree view']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="64ba0d24-eb03-463c-9e36-81eaa965a418"
+				name="PnlColourPanel"
+				refimgid="3505151a-3301-4f89-b809-9f6ed9d3a6a9"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/container[@controlname='grpBoxRadioButton']/container[@controlname='pnlColourPanel']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/container[@controlname='pnlColourPanel']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="ce13e94f-774f-481e-a048-a31c1dc2856d"
+				name="RdbRedLight"
+				refimgid="9b3d093a-1a7c-4583-ac7e-4d4406a189aa"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/container/container[@controlname='grpBoxRadioButton']/radiobutton[@controlname='rdbRedLight']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/radiobutton[@controlname='rdbRedLight']
+				</item>
+				<item
+				addcaps="treeitem,accessible,accessibletreeitem"
+				capname="treeitem"
+				id="7488448d-1018-4db0-a4e0-fbce758fe44f"
+				name="RanorizeYourselfIn20Minutes"
+				refimgid="eacee297-8532-41ed-9708-107daa8c80ab"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']/tree[@accessiblename='Tree view']/treeitem[@accessiblename='Ranorex Studio fundamentals']/treeitem[@accessiblename='Ranorize yourself in 20 minutes']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']//treeitem[@accessiblename~'^Ranorize\ yourself\ in\ 20\ m']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>
@@ -152,9 +213,8 @@ rkJggg==
 			id="2ccf86e7-cb7b-4275-80fe-89e49408bdb0"
 			name="ProjectManagement"
 			refimgid="f649d293-1164-47e0-bb40-71db21750981"
-			refpath="/list[@controlid='1000']/listitem[@text='Project Management']"
 			searchtimeout="30000ms">
-				/list[@controlid='1000']/listitem[@text='Project Management']
+				/list[@controlid='1000']/listitem[@text=$Department]
 			</item>
 			<basepath>
 				/list[@controlid='1000']
@@ -218,5 +278,15 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="14db4c9b-793e-4f23-a599-450366ae0e82"
+		name="Gender">
+			rdbMale
+		</var>
+		<var
+		id="4df2c91b-1ba3-457a-8208-563447a0d3bc"
+		name="Department">
+			Project Management
+		</var>
 	</variables>
 </repository>

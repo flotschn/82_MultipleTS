@@ -41,6 +41,7 @@ namespace RxDatabase.Database_functions
         /// </summary>
         public InsertAge()
         {
+            Age = "48";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace RxDatabase.Database_functions
         }
 
 #region Variables
+
+        string _Age;
+
+        /// <summary>
+        /// Gets or sets the value of variable Age.
+        /// </summary>
+        [TestVariable("8cfa192a-0d0e-41a2-8ef8-ced430c42710")]
+        public string Age
+        {
+            get { return _Age; }
+            set { _Age = value; }
+        }
 
 #endregion
 
@@ -85,8 +98,8 @@ namespace RxDatabase.Database_functions
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'DemoApplication.DatabaseTab.Age'.", repo.DemoApplication.DatabaseTab.AgeInfo, new RecordItemIndex(1));
             repo.DemoApplication.DatabaseTab.Age.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '48' with focus on 'DemoApplication.DatabaseTab.Age'.", repo.DemoApplication.DatabaseTab.AgeInfo, new RecordItemIndex(2));
-            repo.DemoApplication.DatabaseTab.Age.PressKeys("48");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Age' with focus on 'DemoApplication.DatabaseTab.Age'.", repo.DemoApplication.DatabaseTab.AgeInfo, new RecordItemIndex(2));
+            repo.DemoApplication.DatabaseTab.Age.PressKeys(Age);
             
         }
 

@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="RxDatabase.Database_functions">
 	</codegen>
 	<variables>
+		<var
+		id="61289c9e-050f-4717-bdfc-2fc52b948381"
+		name="Name">
+			John
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -307,6 +312,10 @@ iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Name">
+				</binding>
 			</bindings>
 			<info
 			id="81f54b8e-b469-4ddf-8645-58956dc3b68e"
@@ -1017,7 +1026,7 @@ UUAFFFFABRRRQAUUUUAFFFFAH//Z
 	id="67ac6bf3-7ba6-4cc2-b500-02cee73dac25"
 	name="RxDatabaseRepository"
 	relativepath="..\RxDatabaseRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.2">
 		<codegen
 		classname="RxDatabaseRepository"
 		namespace="RxDatabase">

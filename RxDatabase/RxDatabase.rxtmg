@@ -3,15 +3,113 @@
 rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<modulegroupdef
+			id="4ca097b0-7b53-4e29-a174-054d461a93e3"
+			name="EnterData">
+				<groupvariables>
+					<groupvariable
+					defaultvalue="John"
+					id="ee3e4691-5793-4985-8ada-a9ed4527addd"
+					name="ModuleGroupName">
+						<modulevariable
+						moduleref="de931b34-d397-42e7-9005-c1f8bed118e6"
+						name="Name"
+						variableref="61289c9e-050f-4717-bdfc-2fc52b948381">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="48"
+					id="7466c568-5ec6-4797-b29d-355b27237bca"
+					name="ModuleGroupAge">
+						<modulevariable
+						moduleref="6a1862c1-98de-4ecb-844f-323bfd24c3ec"
+						name="Age"
+						variableref="8cfa192a-0d0e-41a2-8ef8-ced430c42710">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="588151bd-5d93-4ba1-ae6e-2dc025d0cb6b"
+					name="ModuleGroupGender">
+						<modulevariable
+						moduleref="7a8f6b92-4ce3-4545-b870-3969316073cb"
+						name="Gender"
+						variableref="14db4c9b-793e-4f23-a599-450366ae0e82">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="dda0066c-ff35-4f15-b00d-d195ad0f420d"
+					name="ModuleGroupDepartment">
+						<modulevariable
+						moduleref="5435cb40-de4b-42bf-a032-3c447c103327"
+						name="Department"
+						variableref="4df2c91b-1ba3-457a-8208-563447a0d3bc">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
+			id="5435cb40-de4b-42bf-a032-3c447c103327"
+			name="SelectDepartment"
+			ref="dd058ab9-d03a-42f5-b9e6-66219ac343a0"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6a1862c1-98de-4ecb-844f-323bfd24c3ec"
+			name="InsertAge"
+			ref="03670c42-b72a-4bec-819b-51f09b02ca67"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7a8f6b92-4ce3-4545-b870-3969316073cb"
+			name="SelectGender"
+			ref="e96ff564-0fa4-4a0b-b6f8-f046418f69a1"
+			type="Recording">
+			</testmodule>
 			<modulegroups
 			id="a127ca8e-6fc7-4f60-bb13-a3c431056b80"
 			name="RxDatabase">
 			</modulegroups>
+			<testmodule
+			id="d9aba499-4967-4cd4-b02e-f6000ba23dd2"
+			name="AddEntry"
+			ref="2345ab38-a984-4a7d-b0b9-cd05dd0027ae"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="de931b34-d397-42e7-9005-c1f8bed118e6"
+			name="InsertName"
+			ref="de7d1aca-629f-455d-ba2d-22b0da2e79bc"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
 			id="a127ca8e-6fc7-4f60-bb13-a3c431056b80"
 			name="RxDatabase">
+				<modulegroupdef
+				id="4ca097b0-7b53-4e29-a174-054d461a93e3"
+				name="EnterData">
+					<testmodule
+					id="de931b34-d397-42e7-9005-c1f8bed118e6"
+					name="InsertName">
+					</testmodule>
+					<testmodule
+					id="6a1862c1-98de-4ecb-844f-323bfd24c3ec"
+					name="InsertAge">
+					</testmodule>
+					<testmodule
+					id="7a8f6b92-4ce3-4545-b870-3969316073cb"
+					name="SelectGender">
+					</testmodule>
+					<testmodule
+					id="5435cb40-de4b-42bf-a032-3c447c103327"
+					name="SelectDepartment">
+					</testmodule>
+					<testmodule
+					id="d9aba499-4967-4cd4-b02e-f6000ba23dd2"
+					name="AddEntry">
+					</testmodule>
+				</modulegroupdef>
 			</modulegroups>
 		</childhierarchy>
 	</testsuiteentryhierarchy>
