@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E5A24F38-1FD6-4BB3-AC02-6854261B2BBC}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RxDatabase</RootNamespace>
+    <AssemblyName>RxDatabase</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d8b2296f-0b86-4556-b970-92464483c6d9</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application functions\ExitAUT.cs">
+      <DependentUpon>ExitAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>599e48b0-404d-4b6e-a432-997b28857da4</id>
+      <BoundTo>b976784a-42d1-420a-b2a1-eeaca6d64a13</BoundTo>
+    </Compile>
+    <Compile Include="Application functions\ExitAUT.UserCode.cs">
+      <DependentUpon>ExitAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45707b0d-6098-4263-89df-4d8ca29917dc</id>
+      <BoundTo>b976784a-42d1-420a-b2a1-eeaca6d64a13</BoundTo>
+    </Compile>
+    <Compile Include="Application functions\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8e00a25-1a72-4577-a474-f89f946eaadf</id>
+      <BoundTo>3521d46f-bd69-4dfb-9054-d74794f8c49c</BoundTo>
+    </Compile>
+    <Compile Include="Application functions\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a25e2b9-8874-473a-99ce-df1a3c9cebcb</id>
+      <BoundTo>3521d46f-bd69-4dfb-9054-d74794f8c49c</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>87a683bb-f222-43b1-8615-161c858c38ce</id>
+    </Compile>
+    <Compile Include="Database functions\AddEntry.cs">
+      <DependentUpon>AddEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>979a29cd-6422-4ef4-bff2-9e9de51b4de7</id>
+      <BoundTo>15e16923-e01e-46d4-997d-4d310e8221a0</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\AddEntry.UserCode.cs">
+      <DependentUpon>AddEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6f265b0-8730-404b-9335-0915182c7120</id>
+      <BoundTo>15e16923-e01e-46d4-997d-4d310e8221a0</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\InsertAge.cs">
+      <DependentUpon>InsertAge.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23a74ea2-66ef-4c13-a583-03f727b90f0c</id>
+      <BoundTo>4b09edc6-1be5-4876-9b48-0649dfc1f5dc</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\InsertAge.UserCode.cs">
+      <DependentUpon>InsertAge.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55614a23-03ef-48dd-8832-d67f5f8ac799</id>
+      <BoundTo>4b09edc6-1be5-4876-9b48-0649dfc1f5dc</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\InsertName.cs">
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4dcce09-f266-4a01-bd4a-382334245c3e</id>
+      <BoundTo>a0156564-5f23-4597-a05c-307dde02b43a</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\InsertName.UserCode.cs">
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0d4adab-6423-4245-baa2-f8cb14729703</id>
+      <BoundTo>a0156564-5f23-4597-a05c-307dde02b43a</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\SelectDepartment.cs">
+      <DependentUpon>SelectDepartment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb3becd1-67d0-4c17-99e3-11ac8d0bda00</id>
+      <BoundTo>aa793c3f-c656-4e7d-88b3-dde8511ccb7d</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\SelectDepartment.UserCode.cs">
+      <DependentUpon>SelectDepartment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2818c2df-81c1-49fe-a888-2fdc361149ab</id>
+      <BoundTo>aa793c3f-c656-4e7d-88b3-dde8511ccb7d</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\SelectGender.cs">
+      <DependentUpon>SelectGender.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6afc39ee-1990-479f-bbf7-91557a7eb448</id>
+      <BoundTo>b533344a-d099-47f4-900d-c748034dc5b3</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\SelectGender.UserCode.cs">
+      <DependentUpon>SelectGender.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e77d5456-a697-40b1-8c71-161297cc8ee7</id>
+      <BoundTo>b533344a-d099-47f4-900d-c748034dc5b3</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\ValidateEntries.cs">
+      <DependentUpon>ValidateEntries.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f4a98352-88bc-4e14-a8a2-374f3fa558f0</id>
+      <BoundTo>e8bd9d32-80fd-436b-ba5a-a879542f806f</BoundTo>
+    </Compile>
+    <Compile Include="Database functions\ValidateEntries.UserCode.cs">
+      <DependentUpon>ValidateEntries.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>065ee311-0ed5-4d08-b4b9-01e82ffb6c6a</id>
+      <BoundTo>e8bd9d32-80fd-436b-ba5a-a879542f806f</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>ad499db2-c4db-4a12-9950-14076b4a2682</id>
+    </Compile>
+    <Compile Include="RxDatabaseRepository.cs">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <DependentUpon>RxDatabaseRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ba67ac7c-a244-409c-81a5-dfefbf06d889</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>c9c90f8a-0d2f-4719-8b3d-b9fe7974480b</id>
+    </None>
+    <None Include="Application functions\ExitAUT.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>b976784a-42d1-420a-b2a1-eeaca6d64a13</id>
+      <recordtableid>4daaf4cc-f096-4533-a5ec-29625bb0b3fc</recordtableid>
+    </None>
+    <None Include="Application functions\StartAUT.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>3521d46f-bd69-4dfb-9054-d74794f8c49c</id>
+      <recordtableid>d6149e74-6188-4a99-a4b7-c9e207c46a15</recordtableid>
+    </None>
+    <None Include="Database functions\AddEntry.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>15e16923-e01e-46d4-997d-4d310e8221a0</id>
+      <recordtableid>2345ab38-a984-4a7d-b0b9-cd05dd0027ae</recordtableid>
+    </None>
+    <None Include="Database functions\InsertAge.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>4b09edc6-1be5-4876-9b48-0649dfc1f5dc</id>
+      <recordtableid>03670c42-b72a-4bec-819b-51f09b02ca67</recordtableid>
+    </None>
+    <None Include="Database functions\InsertName.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>a0156564-5f23-4597-a05c-307dde02b43a</id>
+      <recordtableid>de7d1aca-629f-455d-ba2d-22b0da2e79bc</recordtableid>
+    </None>
+    <None Include="Database functions\SelectDepartment.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>aa793c3f-c656-4e7d-88b3-dde8511ccb7d</id>
+      <recordtableid>dd058ab9-d03a-42f5-b9e6-66219ac343a0</recordtableid>
+    </None>
+    <None Include="Database functions\SelectGender.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>b533344a-d099-47f4-900d-c748034dc5b3</id>
+      <recordtableid>e96ff564-0fa4-4a0b-b6f8-f046418f69a1</recordtableid>
+    </None>
+    <None Include="Database functions\ValidateEntries.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>e8bd9d32-80fd-436b-ba5a-a879542f806f</id>
+      <recordtableid>2fe8733a-8279-476f-ae38-29c33f509051</recordtableid>
+    </None>
+    <None Include="RxDatabaseRepository.rximg">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <DependentUpon>RxDatabaseRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e2a7740c-cc50-4444-bf3e-e45ef62e686d</id>
+    </None>
+    <None Include="RxDatabaseRepository.rxrep">
+      <id>d8b2296f-0b86-4556-b970-92464483c6d9</id>
+      <repoid>67ac6bf3-7ba6-4cc2-b500-02cee73dac25</repoid>
+      <reporootid>433e9601-1d78-4cca-8b70-baf669adfae5</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RxDatabase.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>76ee4928-78b8-44be-8f5c-5a5b40342e2d</id>
+    </Content>
+    <Content Include="RxDatabase.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d80fe143-28cb-4bc2-91cf-c4261583b221</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application functions">
+      <id>4ad7341a-de49-4cdc-839b-92f71919784f</id>
+    </Folder>
+    <Folder Include="Database functions">
+      <id>c167fac4-7e6f-4f97-9ac0-e3fe706fda62</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
