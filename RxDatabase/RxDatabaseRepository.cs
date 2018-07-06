@@ -122,9 +122,11 @@ namespace RxDatabase
         {
             RxDatabaseRepositoryFolders.DatabaseTabFolder _databasetab;
             RxDatabaseRepositoryFolders.RxTabUIElementsFolder _rxtabuielements;
+            RxDatabaseRepositoryFolders.RxTabUploadFolder _rxtabupload;
             RepoItemInfo _databaseInfo;
             RepoItemInfo _btnexitInfo;
             RepoItemInfo _uielementtestareaInfo;
+            RepoItemInfo _uploadtestingInfo;
 
             /// <summary>
             /// Creates a new DemoApplication  folder.
@@ -134,9 +136,11 @@ namespace RxDatabase
             {
                 _databasetab = new RxDatabaseRepositoryFolders.DatabaseTabFolder(this);
                 _rxtabuielements = new RxDatabaseRepositoryFolders.RxTabUIElementsFolder(this);
+                _rxtabupload = new RxDatabaseRepositoryFolders.RxTabUploadFolder(this);
                 _databaseInfo = new RepoItemInfo(this, "Database", "?/?/tabpage[@accessiblename='Test database']", 30000, null, "44a1f073-f9bd-4c27-8a7b-2d78baeb8274");
                 _btnexitInfo = new RepoItemInfo(this, "BtnExit", "button[@controlname='RxButtonExit']", 30000, null, "2598a21b-f421-414d-9b6d-0cdcb44cbd8c");
                 _uielementtestareaInfo = new RepoItemInfo(this, "UIElementTestArea", "?/?/tabpage[@accessiblename='UI-element test area']", 30000, null, "f05255d4-bf18-4ffc-8ce9-4b9d80ea284f");
+                _uploadtestingInfo = new RepoItemInfo(this, "UploadTesting", "?/?/tabpage[@accessiblename='Upload testing']", 30000, null, "a4c20539-3fcd-4e4c-9a9f-9f0f4f01e2b2");
             }
 
             /// <summary>
@@ -236,6 +240,30 @@ namespace RxDatabase
             }
 
             /// <summary>
+            /// The UploadTesting item.
+            /// </summary>
+            [RepositoryItem("a4c20539-3fcd-4e4c-9a9f-9f0f4f01e2b2")]
+            public virtual Ranorex.TabPage UploadTesting
+            {
+                get
+                {
+                    return _uploadtestingInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UploadTesting item info.
+            /// </summary>
+            [RepositoryItemInfo("a4c20539-3fcd-4e4c-9a9f-9f0f4f01e2b2")]
+            public virtual RepoItemInfo UploadTestingInfo
+            {
+                get
+                {
+                    return _uploadtestingInfo;
+                }
+            }
+
+            /// <summary>
             /// The DatabaseTab folder.
             /// </summary>
             [RepositoryFolder("d1b35100-06b2-4568-84e6-678337240c68")]
@@ -251,6 +279,15 @@ namespace RxDatabase
             public virtual RxDatabaseRepositoryFolders.RxTabUIElementsFolder RxTabUIElements
             {
                 get { return _rxtabuielements; }
+            }
+
+            /// <summary>
+            /// The RxTabUpload folder.
+            /// </summary>
+            [RepositoryFolder("253bf77e-c9ef-41cc-9335-7729aa02a1a4")]
+            public virtual RxDatabaseRepositoryFolders.RxTabUploadFolder RxTabUpload
+            {
+                get { return _rxtabupload; }
             }
         }
 
@@ -616,6 +653,150 @@ namespace RxDatabase
                 get
                 {
                     return _ranorizeyourselfin20minutesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RxTabUploadFolder folder.
+        /// </summary>
+        [RepositoryFolder("253bf77e-c9ef-41cc-9335-7729aa02a1a4")]
+        public partial class RxTabUploadFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _resetuploadInfo;
+            RepoItemInfo _rbslowInfo;
+            RepoItemInfo _btnstartuploadInfo;
+            RepoItemInfo _uploadprogressbarInfo;
+
+            /// <summary>
+            /// Creates a new RxTabUpload  folder.
+            /// </summary>
+            public RxTabUploadFolder(RepoGenBaseFolder parentFolder) :
+                    base("RxTabUpload", "?/?/tabpage[@controlname='RxTabUpload']", parentFolder, 30000, null, false, "253bf77e-c9ef-41cc-9335-7729aa02a1a4", "")
+            {
+                _resetuploadInfo = new RepoItemInfo(this, "ResetUpload", "?/?/element[@accessiblename='Reset upload']", 30000, null, "26106fcd-0578-4297-a82f-403bf9bd39a5");
+                _rbslowInfo = new RepoItemInfo(this, "RBSlow", "?/?/radiobutton[@controlname='rBSlow']", 30000, null, "473217c2-465f-465b-a944-2720919be3ed");
+                _btnstartuploadInfo = new RepoItemInfo(this, "BtnStartUpload", "button[@controlname='btnStartUpload']", 30000, null, "519b92c0-9512-432f-ad43-456124996e90");
+                _uploadprogressbarInfo = new RepoItemInfo(this, "UploadProgressbar", "progressbar[@controlname='uploadProgressbar']", 30000, null, "086b4d0d-01e4-4189-b0e7-0b6d64f15d68");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("253bf77e-c9ef-41cc-9335-7729aa02a1a4")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("253bf77e-c9ef-41cc-9335-7729aa02a1a4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResetUpload item.
+            /// </summary>
+            [RepositoryItem("26106fcd-0578-4297-a82f-403bf9bd39a5")]
+            public virtual Ranorex.Unknown ResetUpload
+            {
+                get
+                {
+                    return _resetuploadInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResetUpload item info.
+            /// </summary>
+            [RepositoryItemInfo("26106fcd-0578-4297-a82f-403bf9bd39a5")]
+            public virtual RepoItemInfo ResetUploadInfo
+            {
+                get
+                {
+                    return _resetuploadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RBSlow item.
+            /// </summary>
+            [RepositoryItem("473217c2-465f-465b-a944-2720919be3ed")]
+            public virtual Ranorex.RadioButton RBSlow
+            {
+                get
+                {
+                    return _rbslowInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RBSlow item info.
+            /// </summary>
+            [RepositoryItemInfo("473217c2-465f-465b-a944-2720919be3ed")]
+            public virtual RepoItemInfo RBSlowInfo
+            {
+                get
+                {
+                    return _rbslowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnStartUpload item.
+            /// </summary>
+            [RepositoryItem("519b92c0-9512-432f-ad43-456124996e90")]
+            public virtual Ranorex.Button BtnStartUpload
+            {
+                get
+                {
+                    return _btnstartuploadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnStartUpload item info.
+            /// </summary>
+            [RepositoryItemInfo("519b92c0-9512-432f-ad43-456124996e90")]
+            public virtual RepoItemInfo BtnStartUploadInfo
+            {
+                get
+                {
+                    return _btnstartuploadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UploadProgressbar item.
+            /// </summary>
+            [RepositoryItem("086b4d0d-01e4-4189-b0e7-0b6d64f15d68")]
+            public virtual Ranorex.ProgressBar UploadProgressbar
+            {
+                get
+                {
+                    return _uploadprogressbarInfo.CreateAdapter<Ranorex.ProgressBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UploadProgressbar item info.
+            /// </summary>
+            [RepositoryItemInfo("086b4d0d-01e4-4189-b0e7-0b6d64f15d68")]
+            public virtual RepoItemInfo UploadProgressbarInfo
+            {
+                get
+                {
+                    return _uploadprogressbarInfo;
                 }
             }
         }

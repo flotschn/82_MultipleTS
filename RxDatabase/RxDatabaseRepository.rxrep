@@ -187,6 +187,69 @@ rxversion="8.2">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']
 				</basepath>
 			</folder>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="a4c20539-3fcd-4e4c-9a9f-9f0f4f01e2b2"
+			name="UploadTesting"
+			refimgid="9779081c-7871-4ce1-9f27-4bd2a9d5c157"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Upload testing']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Upload testing']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="253bf77e-c9ef-41cc-9335-7729aa02a1a4"
+			isrooted="True"
+			name="RxTabUpload"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabUpload']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="26106fcd-0578-4297-a82f-403bf9bd39a5"
+				name="ResetUpload"
+				refimgid="9285b18e-62db-41da-932e-15daf2236a19"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnResetUpload']/element[@accessiblename='Reset upload']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/?/?/element[@accessiblename='Reset upload']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="473217c2-465f-465b-a944-2720919be3ed"
+				name="RBSlow"
+				refimgid="a0041bf7-3109-44c0-b9cb-68b148885f36"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/container/radiobutton[@controlname='rBSlow']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/?/?/radiobutton[@controlname='rBSlow']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="519b92c0-9512-432f-ad43-456124996e90"
+				name="BtnStartUpload"
+				refimgid="65470c1d-d478-4512-999f-c3fa51f83c84"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']
+				</item>
+				<item
+				addcaps="progressbar,control,nativewindow"
+				capname="progressbar"
+				id="086b4d0d-01e4-4189-b0e7-0b6d64f15d68"
+				name="UploadProgressbar"
+				refimgid="ab07090d-2147-4b7b-803a-0f1c7dd14293"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/progressbar[@controlname='uploadProgressbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/progressbar[@controlname='uploadProgressbar']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>

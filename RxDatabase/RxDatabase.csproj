@@ -213,6 +213,18 @@
       <id>065ee311-0ed5-4d08-b4b9-01e82ffb6c6a</id>
       <BoundTo>e8bd9d32-80fd-436b-ba5a-a879542f806f</BoundTo>
     </Compile>
+    <Compile Include="NavigateToDBTab.cs">
+      <BoundTo>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</BoundTo>
+      <DependentUpon>NavigateToDBTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f11933ec-978f-4ae8-9f34-cb91e065ee40</id>
+    </Compile>
+    <Compile Include="NavigateToDBTab.UserCode.cs">
+      <BoundTo>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</BoundTo>
+      <DependentUpon>NavigateToDBTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14063d2e-97a3-452e-a80d-7d5531558f3a</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>ad499db2-c4db-4a12-9950-14076b4a2682</id>
     </Compile>
@@ -278,6 +290,11 @@
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
       <id>e8bd9d32-80fd-436b-ba5a-a879542f806f</id>
       <recordtableid>2fe8733a-8279-476f-ae38-29c33f509051</recordtableid>
+    </None>
+    <None Include="NavigateToDBTab.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</id>
+      <recordtableid>aa48c7e5-fb0b-4120-beb5-200a820fbe00</recordtableid>
     </None>
     <None Include="RxDatabaseRepository.rximg">
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>

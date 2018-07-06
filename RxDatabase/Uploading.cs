@@ -79,29 +79,20 @@ namespace RxDatabase
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.UIElementTestArea' at 74;13.", repo.DemoApplication.UIElementTestAreaInfo, new RecordItemIndex(0));
-            repo.DemoApplication.UIElementTestArea.Click("74;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.UploadTesting' at 46;5.", repo.DemoApplication.UploadTestingInfo, new RecordItemIndex(0));
+            repo.DemoApplication.UploadTesting.Click("46;5");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.RxTabUIElements.RdbRedLight' at 5;8.", repo.DemoApplication.RxTabUIElements.RdbRedLightInfo, new RecordItemIndex(1));
-            repo.DemoApplication.RxTabUIElements.RdbRedLight.Click("5;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.RxTabUpload.RBSlow' at 5;5.", repo.DemoApplication.RxTabUpload.RBSlowInfo, new RecordItemIndex(1));
+            repo.DemoApplication.RxTabUpload.RBSlow.Click("5;5");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (BackColor='Red') on item 'DemoApplication.RxTabUIElements.PnlColourPanel'.", repo.DemoApplication.RxTabUIElements.PnlColourPanelInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.DemoApplication.RxTabUIElements.PnlColourPanelInfo, "BackColor", "Red");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.RxTabUIElements.TreeView' at 12;13.", repo.DemoApplication.RxTabUIElements.TreeViewInfo, new RecordItemIndex(3));
-            repo.DemoApplication.RxTabUIElements.TreeView.Click("12;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.RxTabUpload.BtnStartUpload' at 78;15.", repo.DemoApplication.RxTabUpload.BtnStartUploadInfo, new RecordItemIndex(2));
+            repo.DemoApplication.RxTabUpload.BtnStartUpload.Click("78;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'DemoApplication.RxTabUIElements.RanorizeYourselfIn20Minutes'.", repo.DemoApplication.RxTabUIElements.RanorizeYourselfIn20MinutesInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DemoApplication.RxTabUIElements.RanorizeYourselfIn20MinutesInfo, "Visible", "True");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Ranorize yourself in 20 minutes') on item 'DemoApplication.RxTabUIElements.RanorizeYourselfIn20Minutes'.", repo.DemoApplication.RxTabUIElements.RanorizeYourselfIn20MinutesInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.DemoApplication.RxTabUIElements.RanorizeYourselfIn20MinutesInfo, "Text", "Ranorize yourself in 20 minutes");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Value' to equal the specified value '100'. Associated repository item: 'DemoApplication.RxTabUpload.UploadProgressbar'", repo.DemoApplication.RxTabUpload.UploadProgressbarInfo, new RecordItemIndex(3));
+            repo.DemoApplication.RxTabUpload.UploadProgressbarInfo.WaitForAttributeEqual(5000, "Value", "100");
             
         }
 

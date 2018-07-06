@@ -81,6 +81,12 @@ rxversion="8.2">
 			ref="de7d1aca-629f-455d-ba2d-22b0da2e79bc"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e2a85b5e-a51c-403c-aa9b-97376f226745"
+			name="NavigateToDBTab"
+			ref="aa48c7e5-fb0b-4120-beb5-200a820fbe00"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
@@ -89,6 +95,10 @@ rxversion="8.2">
 				<modulegroupdef
 				id="4ca097b0-7b53-4e29-a174-054d461a93e3"
 				name="EnterData">
+					<testmodule
+					id="e2a85b5e-a51c-403c-aa9b-97376f226745"
+					name="NavigateToDBTab">
+					</testmodule>
 					<testmodule
 					id="de931b34-d397-42e7-9005-c1f8bed118e6"
 					name="InsertName">

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RxDatabase.Application_functions
+namespace RxDatabase
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The NavigateToDBTab recording.
     /// </summary>
-    [TestModule("d6149e74-6188-4a99-a4b7-c9e207c46a15", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("aa48c7e5-fb0b-4120-beb5-200a820fbe00", ModuleType.Recording, 1)]
+    public partial class NavigateToDBTab : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RxDatabase.RxDatabaseRepository repository.
+        /// Holds an instance of the RxDatabaseRepository repository.
         /// </summary>
-        public static RxDatabase.RxDatabaseRepository repo = RxDatabase.RxDatabaseRepository.Instance;
+        public static RxDatabaseRepository repo = RxDatabaseRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static NavigateToDBTab instance = new NavigateToDBTab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public NavigateToDBTab()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static NavigateToDBTab Instance
         {
             get { return instance; }
         }
@@ -73,14 +73,15 @@ namespace RxDatabase.Application_functions
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
-            Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Mouse.DefaultMoveTime = 300;
+            Keyboard.DefaultKeyPressTime = 100;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application '..\\RxDemoApp.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("..\\RxDemoApp.exe", "", "..\\", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DemoApplication.Database' at 49;11.", repo.DemoApplication.DatabaseInfo, new RecordItemIndex(0));
+            repo.DemoApplication.Database.Click("49;11");
+            Delay.Milliseconds(200);
             
         }
 
