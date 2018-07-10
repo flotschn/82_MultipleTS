@@ -1,0 +1,18 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="RxDatabase.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="RxDatabase.rxtst" />
+    <Element value="Database functions\SelectDepartment.rxrec" />
+    <Element value="RxDatabase.rxtmg" />
+    <Element value="Application functions\StartAUT.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

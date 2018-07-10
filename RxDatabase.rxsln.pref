@@ -1,0 +1,15 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{E5A24F38-1FD6-4BB3-AC02-6854261B2BBC}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>4ad7341a-de49-4cdc-839b-92f71919784f</string>
+      <string>c167fac4-7e6f-4f97-9ac0-e3fe706fda62</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution RxDatabase[RxDatabase[Application functions[]Database functions[]]]]&#xD;&#xA;Solution RxDatabase\RxDatabase\RxDatabase.rxtst&#xD;&#xA;Solution RxDatabase\RxDatabase\bin" />
+  <StartupProject value="{E5A24F38-1FD6-4BB3-AC02-6854261B2BBC}" />
+</Properties>
