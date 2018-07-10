@@ -31,6 +31,14 @@ rxversion="8.2">
 			name="Uploading"
 			ref="069d7755-38d6-4de5-aad1-318d0469c014"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ControlNames"
+					datasourceid="43457fc0-6425-4815-81b9-756a2625f186"
+					variableid="25074ac7-7dae-4b3f-8772-57d0c87c146a"
+					variablename="startUploadBtnName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			datasource="Persons"
@@ -87,6 +95,7 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testcase
+			datasource="Upload_Test_Controls"
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
 			name="Upload-Test">
 			</testcase>
@@ -205,6 +214,31 @@ rxversion="8.2">
 			<maskedcolumns>
 			</maskedcolumns>
 		</DataSource>
+		<DataSource
+		id="43457fc0-6425-4815-81b9-756a2625f186"
+		lastknownrowcount="1"
+		name="Upload_Test_Controls"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					ControlNames
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						ControlNames
+					</th>
+				</tr>
+				<tr>
+					<td>
+						btnStartUpload
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
@@ -212,9 +246,6 @@ rxversion="8.2">
 		name="TestRun">
 			<testcontainer
 			id="6b3c6292-2d47-49df-82b4-4011f6e0b1fc">
-			</testcontainer>
-			<testcontainer
-			id="7525d549-8f80-41d9-90e0-561ef4743757">
 			</testcontainer>
 			<testcontainer
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce">

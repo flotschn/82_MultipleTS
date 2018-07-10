@@ -53,6 +53,16 @@ namespace RxDatabase
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable startUploadBtnName.
+        /// </summary>
+        [TestVariable("25074ac7-7dae-4b3f-8772-57d0c87c146a")]
+        public string startUploadBtnName
+        {
+            get { return repo.startUploadBtnName; }
+            set { repo.startUploadBtnName = value; }
+        }
+
 #endregion
 
         /// <summary>

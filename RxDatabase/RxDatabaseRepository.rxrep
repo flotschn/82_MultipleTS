@@ -232,9 +232,8 @@ rxversion="8.2">
 				id="519b92c0-9512-432f-ad43-456124996e90"
 				name="BtnStartUpload"
 				refimgid="65470c1d-d478-4512-999f-c3fa51f83c84"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/button[@controlname=$startUploadBtnName]
 				</item>
 				<item
 				addcaps="progressbar,control,nativewindow"
@@ -350,6 +349,11 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		id="4df2c91b-1ba3-457a-8208-563447a0d3bc"
 		name="Department">
 			Project Management
+		</var>
+		<var
+		id="25074ac7-7dae-4b3f-8772-57d0c87c146a"
+		name="startUploadBtnName">
+			btnStartUpload
 		</var>
 	</variables>
 </repository>

@@ -75,6 +75,18 @@ namespace RxDatabase
             set { _Department = value; }
         }
 
+        string _startUploadBtnName = "btnStartUpload";
+
+        /// <summary>
+        /// Gets or sets the value of variable startUploadBtnName.
+        /// </summary>
+        [TestVariable("25074ac7-7dae-4b3f-8772-57d0c87c146a")]
+        public string startUploadBtnName
+        {
+            get { return _startUploadBtnName; }
+            set { _startUploadBtnName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -676,7 +688,7 @@ namespace RxDatabase
             {
                 _resetuploadInfo = new RepoItemInfo(this, "ResetUpload", "?/?/element[@accessiblename='Reset upload']", 30000, null, "26106fcd-0578-4297-a82f-403bf9bd39a5");
                 _rbslowInfo = new RepoItemInfo(this, "RBSlow", "?/?/radiobutton[@controlname='rBSlow']", 30000, null, "473217c2-465f-465b-a944-2720919be3ed");
-                _btnstartuploadInfo = new RepoItemInfo(this, "BtnStartUpload", "button[@controlname='btnStartUpload']", 30000, null, "519b92c0-9512-432f-ad43-456124996e90");
+                _btnstartuploadInfo = new RepoItemInfo(this, "BtnStartUpload", "button[@controlname=$startUploadBtnName]", 30000, null, "519b92c0-9512-432f-ad43-456124996e90");
                 _uploadprogressbarInfo = new RepoItemInfo(this, "UploadProgressbar", "progressbar[@controlname='uploadProgressbar']", 30000, null, "086b4d0d-01e4-4189-b0e7-0b6d64f15d68");
             }
 
