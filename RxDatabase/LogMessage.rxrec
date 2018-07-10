@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0ae7c72b-4b27-4196-8ca8-f3793c4dcf8d"
+mode="Global"
+rxversion="8.2">
+	<name>
+		LogMessage
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="LogMessage"
+	namespace="RxDatabase">
+	</codegen>
+	<variables>
+		<var
+		id="1ebf7656-5f2b-4f79-9b35-5215b4640967"
+		name="logmsg">
+			Default value :(
+		</var>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="3de4ff00-eb6b-4c0c-985b-b00981f520df">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="logmsg">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="67ac6bf3-7ba6-4cc2-b500-02cee73dac25"
+	name="RxDatabaseRepository"
+	relativepath="RxDatabaseRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RxDatabaseRepository"
+		namespace="RxDatabase">
+		</codegen>
+		<rootfolder
+		id="433e9601-1d78-4cca-8b70-baf669adfae5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		LogMessage.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
