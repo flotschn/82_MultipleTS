@@ -3,6 +3,10 @@
 rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="2922e807-b1fa-417d-86a2-235081663e95"
+			name="Smoke_Upload_Test">
+			</testcase>
 			<teardown
 			id="299878a3-7ccd-4619-af00-e99cdfc7e20b"
 			name="teardown1">
@@ -25,6 +29,12 @@ rxversion="8.2">
 			id="6b3c6292-2d47-49df-82b4-4011f6e0b1fc"
 			name="RxDatabase"
 			reportlevel="Info;20">
+				<parameters>
+					<param
+					name="logmsg"
+					value="Default Value :(">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="6dd77b6d-6a69-4468-8967-73da3b4ca8be"
@@ -45,6 +55,20 @@ rxversion="8.2">
 			id="7525d549-8f80-41d9-90e0-561ef4743757"
 			name="DB_Test">
 			</testcase>
+			<testmodule
+			id="7cb88dd3-6b73-49e1-b90e-7e03203b65a3"
+			name="LogMessage"
+			ref="0ae7c72b-4b27-4196-8ca8-f3793c4dcf8d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="logmsg"
+					datasourceid="6b3c6292-2d47-49df-82b4-4011f6e0b1fc"
+					variableid="1ebf7656-5f2b-4f79-9b35-5215b4640967"
+					variablename="logmsg">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
 			name="ExitAUT"
@@ -183,6 +207,14 @@ rxversion="8.2">
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="2922e807-b1fa-417d-86a2-235081663e95"
+					name="Smoke_Upload_Test">
+						<testmodule
+						id="7cb88dd3-6b73-49e1-b90e-7e03203b65a3"
+						name="LogMessage">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -245,7 +277,13 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="2922e807-b1fa-417d-86a2-235081663e95">
+			</testcontainer>
+			<testcontainer
 			id="6b3c6292-2d47-49df-82b4-4011f6e0b1fc">
+			</testcontainer>
+			<testcontainer
+			id="7525d549-8f80-41d9-90e0-561ef4743757">
 			</testcontainer>
 			<testcontainer
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce">

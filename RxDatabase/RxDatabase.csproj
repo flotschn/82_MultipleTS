@@ -213,6 +213,18 @@
       <id>065ee311-0ed5-4d08-b4b9-01e82ffb6c6a</id>
       <BoundTo>e8bd9d32-80fd-436b-ba5a-a879542f806f</BoundTo>
     </Compile>
+    <Compile Include="LogMessage.cs">
+      <DependentUpon>LogMessage.rxrec</DependentUpon>
+      <id>c619f803-f6fc-4c70-9b8e-93365f3b1eb9</id>
+      <BoundTo>e654c556-57ac-4af2-a6a4-0b2e3a678aff</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="LogMessage.UserCode.cs">
+      <DependentUpon>LogMessage.rxrec</DependentUpon>
+      <id>cc8801ed-f83b-41e9-8b2d-38ba04e4c185</id>
+      <BoundTo>e654c556-57ac-4af2-a6a4-0b2e3a678aff</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="NavigateToDBTab.cs">
       <BoundTo>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</BoundTo>
       <DependentUpon>NavigateToDBTab.rxrec</DependentUpon>
@@ -291,6 +303,11 @@
       <id>e8bd9d32-80fd-436b-ba5a-a879542f806f</id>
       <recordtableid>2fe8733a-8279-476f-ae38-29c33f509051</recordtableid>
     </None>
+    <None Include="LogMessage.rxrec">
+      <id>e654c556-57ac-4af2-a6a4-0b2e3a678aff</id>
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <recordtableid>0ae7c72b-4b27-4196-8ca8-f3793c4dcf8d</recordtableid>
+    </None>
     <None Include="NavigateToDBTab.rxrec">
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
       <id>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</id>
@@ -314,6 +331,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>2ff94987-0202-4857-a559-99714a45ff9d</id>
     </Content>
+    <None Include="RxDemoApp.exe">
+      <id>a489b85c-5b87-4fdc-890c-4d40676fb0c4</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Uploading.rxrec">
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
       <id>72d3d2fd-0943-47cd-bbe7-a394ece6738a</id>

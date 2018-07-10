@@ -79,8 +79,8 @@ namespace RxDatabase.Application_functions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application '..\\RxDemoApp.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("..\\RxDemoApp.exe", "", "..\\", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'RxDemoApp.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("RxDemoApp.exe", "", "", false);
             
         }
 

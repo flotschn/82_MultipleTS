@@ -38,11 +38,8 @@ rxversion="8.2">
 			<bindings>
 			</bindings>
 			<filename>
-				..\RxDemoApp.exe
+				RxDemoApp.exe
 			</filename>
-			<workingdir>
-				..\
-			</workingdir>
 			<args>
 			</args>
 		</runapprecorditem>
