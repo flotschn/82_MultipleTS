@@ -1,12 +1,9 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="RxDatabase.rxtst" />
+    <Element value="Application functions\StartAUT.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="RxDatabase.rxtst" />
-    <Element value="Database functions\SelectDepartment.rxrec" />
-    <Element value="RxDatabase.rxtmg" />
     <Element value="Application functions\StartAUT.rxrec" />
   </Array>
   <Properties name="projectSavedData">
